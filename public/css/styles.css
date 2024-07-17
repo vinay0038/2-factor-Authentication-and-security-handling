@@ -1,0 +1,306 @@
+html{
+  height: 100%;
+}
+body {
+  background-color: #E8ECEF;
+  height: 100%
+}
+
+.centered {
+    padding-top: 200px;
+    text-align: center;
+}
+
+.secret-text {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #000;
+}
+/* General styling */
+/* General styling */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+
+body {
+  background: #000;
+}
+
+/* Custom styles for the login page */
+.containerlogin {
+  margin-top: -170px; /* Adjusted margin-top to move the container further up */
+}
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 150px); /* Adjusted to center vertically with margin-top */
+}
+
+.login-title {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.custom-card {
+  background: #222;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.9);
+}
+
+.custom-card-body {
+  padding: 40px;
+}
+
+.custom-form-group {
+  margin-bottom: 25px;
+}
+
+.custom-label {
+  color: #aaa;
+}
+
+.custom-input {
+  background: #333;
+  border: none;
+  outline: none;
+  padding: 15px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+.custom-btn {
+  background: #0f0;
+  color: #000;
+  font-weight: 600;
+  font-size: 1.35em;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  width: 100%;
+  padding: 10px;
+}
+
+.custom-google-btn {
+  background: #fff;
+  color: #000;
+  font-weight: 600;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-google-btn i {
+  margin-right: 10px;
+}
+
+.custom-btn:active,
+.custom-google-btn:active {
+  opacity: 0.6;
+}
+
+/* Background animation styles */
+.animated-background {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.animated-background::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#000, #0f0, #000);
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.animated-background span {
+  position: absolute;
+  display: block;
+  width: calc(6.25vw - 2px);
+  height: calc(6.25vw - 2px);
+  background: #181818;
+  z-index: 2;
+  transition: 1.5s;
+}
+
+.animated-background span:hover {
+  background: #0f0;
+  transition: 0s;
+}
+
+@media (max-width: 900px) {
+  .animated-background span {
+    width: calc(10vw - 2px);
+    height: calc(10vw - 2px);
+  }
+}
+
+@media (max-width: 600px) {
+  .animated-background span {
+    width: calc(20vw - 2px);
+    height: calc(20vw - 2px);
+  }
+}
+
+/* General styling */
+/* General styling */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+
+body {
+  background: #000;
+  color: #fff; /* Font color */
+}
+
+.container {
+  margin-top: 50px; /* Adjusted margin-top to move the container further up */
+}
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 150px); /* Adjusted to center vertically with margin-top */
+}
+
+.jumbotron {
+  background-color: #222; /* Dark background */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.9);
+}
+
+.jumbotron i {
+  color: #0f0; /* Green font color */
+  text-shadow: 0 0 15px #0f0; /* Light up effect */
+}
+
+.jumbotron h1 {
+  color: #0f0; /* Green font color */
+  text-shadow: 0 0 15px #0f0; /* Light up effect */
+}
+
+.jumbotron p {
+  color: #fff; /* White font color */
+}
+
+.jumbotron hr {
+  border-color: #0f0; /* Green hr color */
+}
+
+.btn {
+  background-color: #0f0; /* Green button background */
+  color: #000; /* Black font color */
+  font-weight: 600;
+  font-size: 1.2em;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #060; /* Darker green on hover */
+  color: #fff; /* White font color */
+}
+
+/* Typing animation styles */
+.typing-animation {
+  overflow: hidden; /* Ensures text stays within container */
+  border-right: .15em solid green; /* Cursor effect */
+  white-space: nowrap; /* Keeps text on one line */
+  margin: 0 auto; /* Centers text container */
+  letter-spacing: .15em; /* Adds slight spacing between each letter */
+  animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+  color: #0f0; /* Green, radiant font */
+  font-size: 1.5em;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: green;
+  }
+}
+
+/* Add this to your existing CSS or a separate file */
+.secret-text {
+  font-size: 2rem;
+  color: #fff;
+  background-color: #000;
+  padding: 20px;
+  display: inline-block;
+}
+
+.reveal-letter {
+  opacity: 0;
+  display: inline-block;
+  animation: revealLetter 1s forwards;
+}
+
+@keyframes revealLetter {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Optional styling for buttons */
+.btn-light {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+.btn-dark {
+  background-color: #343a40;
+  color: #fff;
+}
+

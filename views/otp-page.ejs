@@ -1,0 +1,34 @@
+<%- include('partials/header') %>
+
+<div class="animated-background">
+  <div class="containerlogin centered">
+    <div class="row justify-content-center">
+      <div class="col-sm-8">
+        <div class="card custom-card">
+          <div class="card-body custom-card-body">
+            <h1 class="login-title">Enter your OTP</h1>
+            <form action="/verify-otp" method="POST" class="login-form">
+              <input type="hidden" name="email" value="<%= email %>">
+              <div class="form-group custom-form-group">
+                <label for="OTP" class="custom-label">6-digit OTP</label>
+                <input type="number" class="form-control custom-input" name="otp">
+              </div>
+              <button type="submit" class="btn custom-btn">Verify</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-8 mt-3">
+        <div class="card custom-card">
+          <div class="card-body custom-card-body">
+            <a class="btn custom-google-btn" href="/auth/google" role="button">
+              2-Factor Authentication
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include('partials/footer') %>
